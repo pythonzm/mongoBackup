@@ -37,7 +37,6 @@ func downloadDbs(c *cli.Context) {
 
 func getUrl(c *cli.Context, mongoId string) (url string) {
 	client, err := dds.NewClientWithAccessKey(os.Getenv("regionId"), os.Getenv("accessKeyId"), os.Getenv("accessKeySecret"))
-	//client, err := dds.NewClientWithAccessKey("cn-shanghai", "LTAI4GD1FBfk9fZZCRjiUMQy", "KcnAyJSqGvH3Zl8hfMUf4scUGNcTmT")
 	if err != nil {
 		panic(err)
 	}
